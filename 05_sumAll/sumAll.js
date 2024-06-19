@@ -10,7 +10,7 @@ const sumAll = function (num1, num2) {
   return result;
 };
 
-sumAll(-10, 4);
+sumAll();
 
 // Do not edit below this line
 module.exports = sumAll;
