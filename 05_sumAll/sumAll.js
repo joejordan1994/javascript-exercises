@@ -1,3 +1,6 @@
+// Hey Joe, work on the final three tests for returning "ERROR" under negative and non
+// numeric numbers. Keep up the great work!
+
 const sumAll = function (num1, num2) {
   let start = Math.min(num1, num2);
   let end = Math.max(num1, num2);
