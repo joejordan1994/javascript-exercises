@@ -1,5 +1,6 @@
 // Hey Joe, work on the final three tests for returning "ERROR" under negative and non
-// numeric numbers. Keep up the great work!
+// numeric numbers. Keep up the great work! BTW, use the ...rest argument and re-write
+// this assignment.
 
 const sumAll = function (num1, num2) {
   let start = Math.min(num1, num2);
