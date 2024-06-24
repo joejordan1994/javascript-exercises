@@ -1,8 +1,26 @@
-// Hey Joe, work on the final three tests for returning "ERROR" under negative and non
-// numeric numbers. Keep up the great work! BTW, use the ...rest argument and re-write
-// this assignment.
+const sumAll = function (min, max) {
+  if (min < 0 || max < 0) {
+    return "ERROR";
+  }
+  if (
+    typeof min !== `number` ||
+    typeof max !== `number` ||
+    isNaN(min) ||
+    isNaN(max)
+  ) {
+    return "ERROR";
+  }
 
-const sumAll = function (...nums) {};
+  if (min > max) {
+    [min, max] = [max, min];
+  }
+
+  let sum = 0;
+  for (let i = min; i <= max; i++) {
+    sum += i;
+  }
+  return sum;
+};
 
 // Do not edit below this line
 module.exports = sumAll;
